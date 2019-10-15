@@ -86,7 +86,7 @@ public class DHT {
 					
 					patterns.forEach(pattern -> {
 						var wpf = Future.<DHTWarpPublishResult>future();
-						warp.publish(3, weftPublishResult.result().getPublishedLocation(), pattern, attributes, key, wpf);
+						warp.publish(weftPublishResult.result().getPublishedLocation(), pattern, attributes, key, wpf);
 						wpfs.add(wpf);
 					});
 					

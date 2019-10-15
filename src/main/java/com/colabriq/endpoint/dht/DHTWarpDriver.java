@@ -63,7 +63,7 @@ public class DHTWarpDriver {
 	 * Publish data against a new pattern to the Warp
 	 * Data is already on the weft, provide the ID
 	 */
-	public void publish(int x, String location, String pattern, String policy, EncodeableSecretKey key, Future<DHTWarpPublishResult> future) {
+	public void publish(String location, String pattern, String policy, EncodeableSecretKey key, Future<DHTWarpPublishResult> future) {
 		log.debug("Publishing warp pattern: " + pattern);
 			
 		try {
